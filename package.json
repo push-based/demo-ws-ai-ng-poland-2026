@@ -1,0 +1,18 @@
+{
+  "name": "local-inbox",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI Poland 2026 free workshop demo: summarize and classify messages on-device with Chrome's Prompt API",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open /",
+    "build": "npm run check:steps && tsc --noEmit && vite build",
+    "check:steps": "node scripts/check-checkpoints.mjs",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}
